@@ -267,14 +267,14 @@ background-size: 70px 70px !important;
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
     // Required if you want labels in a language that’s different from your user’s context.
-    embedded_svc.menu.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+    embedded_svc.menu.settings.language = 'it'; //For example, enter 'en' or 'en-US'
 	
 		embedded_svc.menu.init(
-			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
-			'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
+			'https://psa-customerfirst--dev01.sandbox.my.salesforce.com',
+			'https://d.la1-c1cs-cdg.salesforceliveagent.com/chat',
 			gslbBaseURL,
-			'00D5t0000004fHO',
-			'FR_Citroen_PCDO'
+			'00D0D0000008ils',
+			'IT_Citroen_PCDO'
 		);
 };
 
@@ -293,17 +293,16 @@ if (isMobileDevice) {} else {
     document.body.appendChild(style);
 }
 
-if (!window.embedded_svc || !window.embedded_svc.menu) {
-    var s = document.createElement('script');
-    s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
-	window.open('https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
-    s.onload = function() {
-        initESW(null);
-    };
-    //document.body.appendChild(s);
-} else {
-    initESW('https://service.force.com');
-}
+	if (!window.embedded_svc || !window.embedded_svc.menu) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://psa-customerfirst--dev01.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
 </script>
 <!--<script type='text/javascript' src='https://c.la1-c1cs-cdg.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
 <script type='text/javascript'>
