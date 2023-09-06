@@ -308,7 +308,38 @@ if (!window.embedded_svc || !window.embedded_svc.menu) {
 <script type='text/javascript'>
 liveagent.init('https://d.la1-c1cs-cdg.salesforceliveagent.com/chat', '57269000000sXvf', '00D0D0000008ils');
 </script>
+<style>
+    /* Estilo para el botón */
+    button {
+        background-color: yellow; /* Fondo amarillo */
+        color: black; /* Texto negro */
+        font-family: Arial, sans-serif; /* Fuente de letra */
+    }
 
+    /* Estilo para el enlace dentro del botón */
+    button a {
+        color: black; /* Texto negro */
+        text-decoration: none; /* Sin subrayado */
+    }
+
+    /* Estilo para el contenido en línea del chat */
+    #liveagent_button_online_57369000000sXyj {
+        background-color: yellow; /* Fondo amarillo */
+        color: black; /* Texto negro */
+        font-family: Arial, sans-serif; /* Fuente de letra */
+        display: inline-block; /* Mostrar como bloque en línea */
+        padding: 10px 20px; /* Espaciado alrededor del contenido */
+    }
+
+    /* Estilo para el contenido fuera de línea del chat */
+    #liveagent_button_offline_57369000000sXyj {
+        background-color: yellow; /* Fondo amarillo */
+        color: black; /* Texto negro */
+        font-family: Arial, sans-serif; /* Fuente de letra */
+        display: none; /* Ocultar por defecto cuando está fuera de línea */
+        padding: 10px 20px; /* Espaciado alrededor del contenido */
+    }
+</style>
 	<button>
 		<a id="liveagent_button_online_57369000000sXyj" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('57369000000sXyj')">Online Chat Content</a>
 		<div id="liveagent_button_offline_57369000000sXyj" style="display: none;">Offline Chat Content</div>
