@@ -218,7 +218,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!--<script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
+<script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
 <style>
 .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
 width : 100% !important;
@@ -296,15 +296,16 @@ if (isMobileDevice) {} else {
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
     s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+	window.open('https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
-    document.body.appendChild(s);
+    //document.body.appendChild(s);
 } else {
     initESW('https://service.force.com');
 }
-</script>-->
-<script type='text/javascript' src='https://c.la1-c1cs-cdg.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
+</script>
+<!--<script type='text/javascript' src='https://c.la1-c1cs-cdg.salesforceliveagent.com/content/g/js/59.0/deployment.js'></script>
 <script type='text/javascript'>
 liveagent.init('https://d.la1-c1cs-cdg.salesforceliveagent.com/chat', '57269000000sXvf', '00D0D0000008ils');
 </script>
@@ -336,6 +337,6 @@ window._laq.push(function(){liveagent.showWhenOnline('57369000000sXyj', document
 liveagent.showWhenOffline('57369000000sXyj', document.getElementById('liveagent_button_offline_57369000000sXyj'));
 });</script>
 	</button>
-
+-->
 </body>
 </html>
